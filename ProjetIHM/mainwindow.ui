@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1393</width>
+    <height>857</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background : black;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_39">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_36">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_38">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt  &quot;Arial&quot;;&quot;&gt;La Banque &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_4">
+            <property name="styleSheet">
+             <string notr="true">border : 1px solid white;</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_34">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_52">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);
+</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt  &quot;Arial&quot;;&quot;&gt;Agence : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QComboBox" name="comboBox_liste_agence_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background : white;
+font: 75 12pt &quot;Arial&quot;;
+</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Toutes agences</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Strasbourg</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Paris</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Marseille</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Metz</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Bordeaux</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox">
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 12pt &quot;Arial&quot;;
+background: white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Agence par défaut </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>498</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_mode_nuit">
+                  <property name="styleSheet">
+                   <string notr="true">background : rgb(5, 188, 255);
+font: 10pt &quot;Arial&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Mode jour</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_51">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt  &quot;Arial&quot;;&quot;&gt;Semaine : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_50">
+                  <item>
+                   <widget class="QComboBox" name="comboBox_liste_agence_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background : white;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 8</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 9</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 10</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 11</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 12</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 13</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 14</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 15</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 16</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 18</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 19</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 20</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 21</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 22</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 23</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 25</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 26</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 27</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 28</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 29</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 30</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 31</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 32</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 33</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 34</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 35</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 36</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 37</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 38</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 39</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 40</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 41</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 42</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 43</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 44</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 45</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 46</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 47</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 48</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 49</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 50</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 51</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 52</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Semaine 53</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>498</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="styleSheet">
+             <string notr="true">border : 1px solid white;
+</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_acceuil">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_37">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <item>
+                   <widget class="QtCharts::QChartView&#10;" name="graphicsView"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <widget class="QPushButton" name="btn_volume_pb_2">
+                      <property name="styleSheet">
+                       <string notr="true">background : white;
+font: 10pt &quot;Arial&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>Volume</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_ca_pb_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>CA</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_pourcentage_pb_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Pourcentage</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="Line" name="line">
+                  <property name="styleSheet">
+                   <string notr="true">border :1px solid white;</string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <item>
+                   <widget class="QtCharts::QChartView&#10;" name="graphicsView_2">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QPushButton" name="btn_volume_pa_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Volume</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_ca_pa_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>CA</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_pourcentage_pa_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Pourcentage</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="Line" name="line_2">
+                  <property name="styleSheet">
+                   <string notr="true">border : 1px solid white;</string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QtCharts::QChartView&#10;" name="graphicsView_3"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <item>
+                     <widget class="QPushButton" name="btn_volume_pbourse_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Volume</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_ca_pbourse_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>CA</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_pourcentage_pbourse_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Pourcentage</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_volume_pb">
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_4"/>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_compte">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Compte</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_pret">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Prêt</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="fermer_volume">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                </property>
+                <property name="text">
+                 <string>Fermer </string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="styleSheet">
+               <string notr="true">background : white;
+font: 10pt &quot;Arial&quot;;
+border: 1px solid black;
+
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>17</number>
+              </property>
+              <property name="midLineWidth">
+               <number>9</number>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              </property>
+              <property name="autoScrollMargin">
+               <number>16</number>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::ExtendedSelection</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>false</bool>
+              </property>
+              <property name="rowCount">
+               <number>0</number>
+              </property>
+              <property name="columnCount">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_pb_volume_pret">
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QtCharts::QChartView&#10;" name="graphicsView_5"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_fermer_volume_pb_pret">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                </property>
+                <property name="text">
+                 <string>Fermer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>17</number>
+              </property>
+              <property name="midLineWidth">
+               <number>9</number>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              </property>
+              <property name="autoScrollMargin">
+               <number>16</number>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::ExtendedSelection</enum>
+              </property>
+              <property name="rowCount">
+               <number>0</number>
+              </property>
+              <property name="columnCount">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_pb_volime_compte">
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_13">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_6"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_retour_volume_pb_2">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_3">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_ca_pb">
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_7">
+                  <property name="styleSheet">
+                   <string notr="true">background : white;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_pret_ca">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Prêt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_compte_ca">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Compte</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="fermer_ca">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                </property>
+                <property name="text">
+                 <string>Fermer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>17</number>
+              </property>
+              <property name="midLineWidth">
+               <number>9</number>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOn</enum>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              </property>
+              <property name="autoScrollMargin">
+               <number>16</number>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::ExtendedSelection</enum>
+              </property>
+              <property name="rowCount">
+               <number>0</number>
+              </property>
+              <property name="columnCount">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_ca_pb_pret">
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_8"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_fermer_ca_pret">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_5">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_ca_pb_compte">
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_9"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_fermer_ca_compte">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_6">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_pourcentage_pb">
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_10"/>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_22">
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_pret_poucentage">
+                    <property name="styleSheet">
+                     <string notr="true">background : white;
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Prêt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_compte_pourcentage">
+                    <property name="styleSheet">
+                     <string notr="true">background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Compte</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="styleSheet">
+                 <string notr="true">background : white;</string>
+                </property>
+                <property name="text">
+                 <string>Fermer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="horizontalFrame_3"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_pourcentage_pb_pret">
+           <layout class="QHBoxLayout" name="horizontalLayout_24">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_11"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fermer_pourcentage_pb_pret">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_7">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_pourcentage_pb_compte">
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_21">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_12"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fermer_pourcentage_pb_compte">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_8">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_volume_pa">
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QtCharts::QChartView&#10;" name="graphicsView_13"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QPushButton" name="ouvrir_pa_velo">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Assurance Vélo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="ouvrir_pa_auto">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Assurance Auto</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_3">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_10">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_volume_pa_velo">
+           <layout class="QHBoxLayout" name="horizontalLayout_41">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_14"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="femer_volume_pa_velo">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_12">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_volume_pa_auto">
+           <layout class="QHBoxLayout" name="horizontalLayout_42">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_28">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_22">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_15"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fermer_pa_volume_auto">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_13">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Ca_pa">
+           <layout class="QHBoxLayout" name="horizontalLayout_31">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_30">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_24">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_23">
+                  <item>
+                   <widget class="QtCharts::QChartView&#10;" name="graphicsView_16"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_29">
+                    <item>
+                     <widget class="QPushButton" name="ouvrir_pa_assurance_velo_ca_2">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Assurance vélo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="ouvrir_pa_assurance_auto_ca">
+                      <property name="styleSheet">
+                       <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                      </property>
+                      <property name="text">
+                       <string>Assurance auto</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Fermer_ca_pa">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_14">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Ca_pa_velo">
+           <layout class="QHBoxLayout" name="horizontalLayout_43">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_32">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_17"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Fermer_ca_velo_pa">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_15">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Ca_pa_auto">
+           <layout class="QHBoxLayout" name="horizontalLayout_44">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_33">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_26">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_18"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Fermer_ca_pa_auto">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_16">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Pourcentage_pa">
+           <layout class="QHBoxLayout" name="horizontalLayout_34">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_28">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_27">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_19"/>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_36">
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pa_pourcentage_auto">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Assurance Vélo</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ouvrir_pb_compte_pourcentage_2">
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Assurance Auto</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="fermer_pourcentage_pa">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                </property>
+                <property name="text">
+                 <string>Fermer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="horizontalFrame_6">
+              <layout class="QHBoxLayout" name="horizontalLayout_35"/>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Pourcentage_pa_velo">
+           <layout class="QHBoxLayout" name="horizontalLayout_45">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_29">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_20"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fermer_pa_pourcentage_velo">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_17">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Pourcentage_pa_auto">
+           <layout class="QHBoxLayout" name="horizontalLayout_46">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_37">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_30">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_21"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_7fermer_pa_pourcentage_auto">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_18">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page">
+           <layout class="QHBoxLayout" name="horizontalLayout_47">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_38">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_31">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_22"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Fermer_volume_bourse">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_19">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <layout class="QHBoxLayout" name="horizontalLayout_48">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_39">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_32">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_23"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Fermer_ca_pbourse">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_20">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <layout class="QHBoxLayout" name="horizontalLayout_49">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_40">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_33">
+                <item>
+                 <widget class="QtCharts::QChartView&#10;" name="graphicsView_24"/>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="fermer_pbourse_pourcent">
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fermer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_21">
+                <property name="styleSheet">
+                 <string notr="true">font: 10pt &quot;Arial&quot;;
+background : white;
+border: 1px solid black;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>17</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>9</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="autoScrollMargin">
+                 <number>16</number>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <property name="columnCount">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_54">
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>498</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_53">
+          <item>
+           <widget class="QPushButton" name="Retour_fenetre_principale">
+            <property name="styleSheet">
+             <string notr="true">background : white;
+font: 10pt &quot;Arial&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Retour fenêtre principale</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Quitter">
+            <property name="styleSheet">
+             <string notr="true">background : white;
+font: 10pt &quot;Arial&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Quitter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1393</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <widget class="QMenu" name="menuEnregister">
+     <property name="title">
+      <string>Enregister</string>
+     </property>
+     <addaction name="action_jpg"/>
+    </widget>
+    <addaction name="menuEnregister"/>
+    <addaction name="actionImprimer"/>
+    <addaction name="actionImporter_fichier"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionImprimer">
+   <property name="text">
+    <string>Imprimer</string>
+   </property>
+  </action>
+  <action name="action_jpg">
+   <property name="text">
+    <string>.jpg</string>
+   </property>
+  </action>
+  <action name="actionImporter_fichier">
+   <property name="text">
+    <string>Importer fichier</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtCharts::QChartView
+</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">QtCharts/QChartView
+</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Quitter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1336</x>
+     <y>827</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1106</x>
+     <y>816</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
